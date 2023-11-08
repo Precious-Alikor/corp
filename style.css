@@ -222,9 +222,9 @@
   }
   
   @media screen and (max-width: 576px) {
-    #logo {
+    /* #logo {
       height: 40px;
-    }
+    } */
     .heading-text {
       font-size: 1.5rem;
     }
