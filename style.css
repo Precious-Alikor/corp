@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+  }
+  
+/* Finnova corp */
+.corp-page {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #f5f6f6;
+  }
+  #logo {
+    height: 45px;
+  }
+  #logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .navbar-toggler {
+    border: 1px solid #909090;
+    outline: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+  }
+  button:focus:not(:focus-visible) {
+    outline: none !important;
+  }
+  .nav-item a {
+    font-size: 0.9rem;
+    font-family: "SF Pro Display";
+    text-decoration: none;
+    color: #0e005f !important;
+  }
+  .banner {
+    background-image: url(./images/bg-white.svg);
+    background-size: cover;
+    background-position: center;
+  }
+  .heading-text {
+    font-size: 5rem;
+    font-family: "SF Pro Display";
+    font-weight: bolder;
+    color: #0e005f;
+  }
+  .sub-heading-text {
+    font-size: 0.9rem;
+    font-family: "SF Pro Display";
+    color: #909090;
+    line-height: 20px;
+  }
+  .get-started-btn {
+    text-decoration-color: #909090;
+    text-underline-offset: 3px;
+    font-family: "SF Pro Display";
+    color: #909090;
+    font-size: 0.8rem;
+  }
+  .fa-arrow-right {
+    color: #909090;
+    font-size: 0.8rem;
+  }
+  .features {
+    font-family: "SF Pro Display";
+  }
+  .product h6,
+  .features h6,
+  .reports h6,
+  .request h6,
+  .sdg h6 {
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    color: #0e005f;
+  }
+  .product p {
+    font-family: "SF Pro Display";
+    line-height: 30px;
+    color: #767678;
+  }
+  .product-img-one {
+    display: block;
+    margin: auto 0 auto auto;
+  }
+  .product-img-two {
+    position: absolute;
+    height: 350px;
+    top: 150px;
+  }
+  .features-text{
+    font-family: "SF Pro Display";
+    color: #767678;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .feature-cards {
+    width: 100%;
+    margin: auto;
+  }
+  .feature-card {
+    width: 30rem;
+    background-color: #f5f6f6;
+    color: #909090;
+    font-size: 14px;
+    font-weight: lighter;
+    border-radius: 0.7rem;
+    padding: 2rem;
+    /* margin-left: -2rem; */
+    box-shadow: 4px 4px 8px 2px rgba(128, 128, 128, 0.23);
+    border: 1px solid #909090;
+    line-height: 23px;
+  }
+  .feature-card:not(:first-child) {
+    margin-left: -4rem;
+  }
+  .feature-card:hover ~ .feature-card {
+    transform: translateX(3rem);
+  }
+  .reports {
+    background-color: #f5f6f6;
+  }
+  .reports h1 {
+    font-family: "SF Pro Display";
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .reports p {
+    font-family: "SF Pro Display";
+    color: #767678;
+  }
+  .reports h5 {
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    color: #767678;
+    line-height: 23px;
+  }
+  .sdg span {
+    border-bottom: 2px solid;
+    color: #0e005f;
+  }
+  .request label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000;
+    font-family: "SF Pro Display";
+  }
+  .request input {
+    width: 97%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+  }
+  .request input::placeholder {
+    font-size: 12px;
+    font-family: "SF Pro Display";
+    letter-spacing: 1px;
+  }
+  .submit-btn {
+    border: none;
+    outline: none;
+    padding: 12px 100px;
+    display: block;
+    margin: auto;
+  }
+  .sdg {
+    background-color: #f5f6f6;
+  }
+  .sdg p {
+    font-family: "SF Pro Display";
+    color: #767678;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .sdg h4 {
+    color: #767678;
+    font-family: "SF Pro Display";
+  }
+  .sdg h5 {
+    font-size: 14px;
+    font-family: "SF Pro Display";
+    color: #767678;
+    line-height: 28px;
+  }
+  .sdg-card {
+    border: 2px solid #909090;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .sdg-img {
+    width: 50px;
+  }
+  .goal {
+    width: 80px;
+  }
+  .sdg-img img {
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (max-width: 992px) {
+    .reports h1 {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .reports h1 {
+      font-size: 3rem;
+    }
+    .feature-card {
+      width: 20rem;
+    }
+    .feature-card:not(:first-child) {
+      margin-left: 0;
+    }
+    .feature-card:hover ~ .feature-card {
+      transform: translateX(0);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    #logo {
+      height: 40px;
+    }
+    .heading-text {
+      font-size: 1.5rem;
+    }
+    .reports h1 {
+      font-size: 1.2rem;
+    }
+    .feature-card {
+      width: 19rem;
+    }
+    .feature-card:not(:first-child) {
+      margin-left: 0;
+    }
+    .feature-card:hover ~ .feature-card {
+      transform: translateX(0);
+    }
+    .product-img-one {
+      width: 80%;
+    }
+    .product-img-two {
+      width: 80%;
+      height: fit-content;
+      margin: 0;
+      top: 160px;
+      left: 30px;
+    }
+  }
