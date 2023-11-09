@@ -12,7 +12,7 @@
   height: 50px;
 }
 #logo img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   object-fit: contain;
 }
