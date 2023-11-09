@@ -148,6 +148,7 @@ button:focus:not(:focus-visible) {
   display: block;
   margin: auto;
   background-color: #150e45;
+  border-radius: 5px;
 }
 .sdg {
   background-color: #f5f6f6;
