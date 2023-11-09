@@ -9,11 +9,11 @@
   margin: 0 auto;
 }
 #logo {
-  height: 45px;
+  height: 50px;
 }
 #logo img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .navbar-toggler {
   border: 1px solid #909090;
