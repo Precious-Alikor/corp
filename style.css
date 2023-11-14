@@ -9,12 +9,15 @@
 * {
   padding: 0;
   margin: 0;
-  /* border: 1px solid red; */
 }
 /* Finnova corp */
 .corp-page {
   max-width: 1700px;
   margin: 0 auto;
+}
+a {
+  border: none;
+  outline: none;
 }
 #logo {
   width: 130px;
@@ -24,9 +27,15 @@
   height: auto;
   object-fit: contain;
 }
+.navbar-toggler-icon {
+  width: 1em !important;
+  height: 1.2em !important;
+}
 .navbar-toggler {
   border: 1px solid #909090;
   outline: none;
+  padding: 2px 7px !important;
+  --bs-border-radius: 0.275rem !important;
 }
 .navbar-toggler:focus {
   box-shadow: none !important;
@@ -52,7 +61,6 @@ button:focus:not(:focus-visible) {
   font-size: 5.5rem;
   font-family: "SF Pro Display";
   font-weight: bolder;
-  /* line-height: 7.5rem; */
   color: #0e005f;
 }
 .sub-heading-text {
@@ -64,7 +72,6 @@ button:focus:not(:focus-visible) {
 .hero-img {
   background-image: url(./images/map.svg);
   background-size: contain;
-  /* background-position: center; */
 }
 .hero-img img {
   width: 85%;
@@ -74,8 +81,6 @@ button:focus:not(:focus-visible) {
   margin: 0 5rem;
   background-color: #e6e6ec;
   box-shadow: 4px 6px 10px rgb(216, 216, 216);
-  /* #818181 */
-  /* #575757 */
 }
 .features {
   font-family: "SF Pro Display";
@@ -86,17 +91,14 @@ button:focus:not(:focus-visible) {
   color: #575757;
   letter-spacing: 1px;
 }
-.features h6,
 .reports h6,
-.request h6,
 .sdg h6 {
   font-size: 1.8rem;
-  font-family: "SF Pro Display";
+  font-family: "Millik Regular";
   color: #150e45;
 }
 .product p {
   font-family: "SF Pro Display";
-  /* line-height: 35px; */
   line-height: 1.8rem;
   color: #767678;
 }
@@ -131,13 +133,13 @@ button:focus:not(:focus-visible) {
   font-size: 1.6rem;
 }
 .feature-card {
-  /* height: 320px; */
   background-color: #f5f6f6;
   border-radius: 5px;
 }
 .feature-card h6 {
   font-size: 1.1rem;
   margin-bottom: 0;
+  color: #150e45;
 }
 .feature-card p {
   font-size: 0.9rem;
@@ -160,9 +162,9 @@ button:focus:not(:focus-visible) {
   font-family: "SF Pro Display";
   font-size: 0.9rem;
 }
-.report-card p{
+.report-card p {
   font-size: 1.5rem;
-  font-family: 'Millik Regular';
+  font-family: "Millik Regular";
 }
 .reports h5 {
   font-family: "SF Pro Display";
@@ -195,6 +197,11 @@ button:focus:not(:focus-visible) {
   font-family: "SF Pro Display";
   letter-spacing: 1px;
 }
+.request h6 {
+  font-size: 1.8rem;
+  font-family: "Millik Regular";
+  color: #150e45;
+}
 .submit-btn {
   font-family: "SF Pro Display";
   border: none;
@@ -205,36 +212,28 @@ button:focus:not(:focus-visible) {
   background-color: #150e45;
   border-radius: 5px;
 }
-/* .sdg {
-  background-color: #f5f6f6;
-} */
-.request-img img {
+/* .request-img img {
   width: 85%;
-}
+} */
 .sdg p {
   font-family: "SF Pro Display";
   font-size: 1rem;
-  /* color: #150e45; */
   color: #656567;
-  /* font-size: 14px; */
-  /* line-height: 25px;  */
 }
 .sdg h4 {
-  /* color: #767678; */
   font-family: "SF Pro Display";
+  font-size: 1.4rem;
 }
 .sdg h5 {
   font-size: 1rem;
   font-family: "SF Pro Display";
   line-height: 1.8rem;
-  /* color: #767678; */
-  /* line-height: 28px; */
 }
 .sdg-card {
-  background-color: #0e005f;
+  background-color: #150e45;
   color: white;
-  width: 45%;
-  height: 300px;
+  /* width: 45%; */
+  /* height: 300px; */
   border-radius: 10px;
   box-shadow: 2px 4px 10px gray;
 }
@@ -244,41 +243,21 @@ button:focus:not(:focus-visible) {
 .goal {
   width: 80px;
 }
-.sdg-img img {
-  width: 100%;
-  height: 100%;
-}
-/* @media screen and (max-width: 992px) {
-  .reports h1 {
-    font-size: 3rem;
-  }
-  .heading-text {
-    font-size: 1.5rem;
-    line-height: 30px;
-  }
-  .reports h1 {
-    font-size: 1.2rem;
-  }
-}
 @media screen and (max-width: 768px) {
-  .reports h1 {
-    font-size: 3rem;
-  }
   .heading-text {
+    font-size: 2.7rem;
+  }
+  .product h6{
     font-size: 2rem;
-    line-height: 30px;
   }
-  .reports h1 {
-    font-size: 1.2rem;
-  }
+  
 }
-
 @media screen and (max-width: 576px) {
   .heading-text {
+    font-size: 2.7rem;
+  }
+  .product h6{
     font-size: 2rem;
-    line-height: 40px;
   }
-  .reports h1 {
-    font-size: 1.7rem;
-  }
-} */
+  
+}
