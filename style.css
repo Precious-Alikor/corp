@@ -2,7 +2,15 @@
   font-family: "SF Pro Display";
   src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
 }
-
+@font-face {
+  font-family: "Millik Regular";
+  src: url(../fonts/MillikRegular.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
 /* Finnova corp */
 .corp-page {
   max-width: 1700px;
@@ -44,34 +52,52 @@ button:focus:not(:focus-visible) {
   font-size: 5.5rem;
   font-family: "SF Pro Display";
   font-weight: bolder;
-  line-height: 105px;
-  color: #909090;
+  /* line-height: 7.5rem; */
+  color: #0e005f;
 }
 .sub-heading-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "SF Pro Display";
   color: #909090;
   line-height: 20px;
 }
-.product span {
-  font-size: 1.2rem;
+.hero-img {
+  background-image: url(./images/map.svg);
+  background-size: contain;
+  /* background-position: center; */
+}
+.hero-img img {
+  width: 85%;
+  object-fit: contain;
+}
+.product {
+  margin: 0 5rem;
+  background-color: #e6e6ec;
+  box-shadow: 4px 6px 10px rgb(216, 216, 216);
+  /* #818181 */
+  /* #575757 */
 }
 .features {
   font-family: "SF Pro Display";
 }
-.product h6,
+.product h6 {
+  font-size: 2.5rem;
+  font-family: "Millik Regular";
+  color: #575757;
+  letter-spacing: 1px;
+}
 .features h6,
 .reports h6,
 .request h6,
 .sdg h6 {
+  font-size: 1.8rem;
   font-family: "SF Pro Display";
-  font-weight: bold;
-  color: #0e005f;
-  font-size: 1rem;
+  color: #150e45;
 }
 .product p {
   font-family: "SF Pro Display";
-  line-height: 35px;
+  /* line-height: 35px; */
+  line-height: 1.8rem;
   color: #767678;
 }
 .product-img-one {
@@ -83,17 +109,40 @@ button:focus:not(:focus-visible) {
   height: 350px;
   top: 150px;
 }
+.feature-leading-text,
+.reports-leading-text {
+  font-family: "Millik Regular";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e005f;
+}
+.icon {
+  color: #0e005f;
+  font-size: 1.5rem;
+}
 .features-text {
   font-family: "SF Pro Display";
-  color: #767678;
-  font-size: 1rem;
-  line-height: 35px;
+  font-size: 0.9rem;
+  color: #656567;
+  line-height: 1.4rem;
 }
-.feature-cards {
-  background-color: #150e45;
+.fa-icon {
+  color: #150e45;
+  font-size: 1.6rem;
 }
-.feature-cards-sec {
-  overflow-x: scroll;
+.feature-card {
+  /* height: 320px; */
+  background-color: #f5f6f6;
+  border-radius: 5px;
+}
+.feature-card h6 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+.feature-card p {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: #575757;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -102,22 +151,22 @@ button:focus:not(:focus-visible) {
   font-size: 1.5rem;
   line-height: 45px;
 }
-
-.reports {
-  background-color: #f5f6f6;
+.report-card {
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px #e6e6e6;
 }
 .reports h1 {
   font-family: "SF Pro Display";
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 0.9rem;
 }
-.reports p {
-  font-family: "SF Pro Display";
-  color: #767678;
+.report-card p{
+  font-size: 1.5rem;
+  font-family: 'Millik Regular';
 }
 .reports h5 {
   font-family: "SF Pro Display";
-  font-size: 14px;
+  font-size: 1rem;
   color: #767678;
   line-height: 23px;
 }
@@ -131,6 +180,10 @@ button:focus:not(:focus-visible) {
   color: #000;
   font-family: "SF Pro Display";
 }
+.request-input {
+  height: 38px;
+  border: 1px solid #767678;
+}
 .request input {
   width: 97%;
   border: none;
@@ -143,6 +196,7 @@ button:focus:not(:focus-visible) {
   letter-spacing: 1px;
 }
 .submit-btn {
+  font-family: "SF Pro Display";
   border: none;
   outline: none;
   padding: 12px 100px;
@@ -151,29 +205,38 @@ button:focus:not(:focus-visible) {
   background-color: #150e45;
   border-radius: 5px;
 }
-.sdg {
+/* .sdg {
   background-color: #f5f6f6;
+} */
+.request-img img {
+  width: 85%;
 }
 .sdg p {
   font-family: "SF Pro Display";
-  color: #767678;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 1rem;
+  /* color: #150e45; */
+  color: #656567;
+  /* font-size: 14px; */
+  /* line-height: 25px;  */
 }
 .sdg h4 {
-  color: #767678;
+  /* color: #767678; */
   font-family: "SF Pro Display";
 }
 .sdg h5 {
-  font-size: 14px;
+  font-size: 1rem;
   font-family: "SF Pro Display";
-  color: #767678;
-  line-height: 28px;
+  line-height: 1.8rem;
+  /* color: #767678; */
+  /* line-height: 28px; */
 }
 .sdg-card {
-  border: 2px solid #909090;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  background-color: #0e005f;
+  color: white;
+  width: 45%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px gray;
 }
 .sdg-img {
   width: 50px;
@@ -185,7 +248,7 @@ button:focus:not(:focus-visible) {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .reports h1 {
     font-size: 3rem;
   }
@@ -218,4 +281,4 @@ button:focus:not(:focus-visible) {
   .reports h1 {
     font-size: 1.7rem;
   }
-}
+} */
