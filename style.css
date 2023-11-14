@@ -79,7 +79,7 @@ button:focus:not(:focus-visible) {
 }
 .product {
   margin: 0 5rem;
-  background-color: #e6e6ec;
+  background-color: #150e45;
   box-shadow: 4px 6px 10px rgb(216, 216, 216);
 }
 .features {
@@ -88,7 +88,7 @@ button:focus:not(:focus-visible) {
 .product h6 {
   font-size: 2.5rem;
   font-family: "Millik Regular";
-  color: #575757;
+  color: #fff;
   letter-spacing: 1px;
 }
 .reports h6,
@@ -100,7 +100,7 @@ button:focus:not(:focus-visible) {
 .product p {
   font-family: "SF Pro Display";
   line-height: 1.8rem;
-  color: #767678;
+  color: #fff;
 }
 .product-img-one {
   display: block;
