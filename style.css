@@ -48,10 +48,13 @@ li {
 .hamburger {
   display: none;
   cursor: pointer;
+  border: 1px solid #150e45;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
 .bar {
   display: block;
-  width: 22px;
+  width: 20px;
   height: 2px;
   background-color: #150e45;
   margin: 4px 0;
@@ -208,8 +211,9 @@ li {
   border: none;
   outline: none;
   padding: 12px 100px;
+  /* text-align: center;
   display: block;
-  margin: auto;
+  margin: auto; */
   background-color: #150e45;
   border-radius: 5px;
 }
@@ -310,6 +314,9 @@ footer h5 {
   .hamburger {
     display: block;
   }
+  .hamburger.active{
+    border: none;
+  }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -344,6 +351,9 @@ footer h5 {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+  .hamburger.active{
+    border: none;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
